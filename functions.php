@@ -4,7 +4,7 @@ function custom_enqueue()
 {
   wp_enqueue_style(
     'my_style',
-    plugins_url(get_template_directory_uri() . '/css/style.css'),
+    get_template_directory_uri() . '/css/style.css',
   );
   wp_enqueue_style('child-style', get_template_directory_uri() . '/css/style.css?' . date("ymdHis", filemtime(get_template_directory() . '/css/style.css')), array('my_style'));
 

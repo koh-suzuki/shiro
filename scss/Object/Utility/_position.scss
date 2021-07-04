@@ -1,0 +1,25 @@
+@use "../../Global";
+
+// ヘッダー
+.l-header {
+  position: fixed;
+}
+
+// メイン
+/* concept */ 
+.u-position {
+  position: relative;
+}
+.u-position_absolute-topCenter {
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.u-position-florist {
+  width: 92%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}

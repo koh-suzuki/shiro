@@ -1,0 +1,39 @@
+@use "../Global";
+
+// ヘッダー
+.c-header_logo {
+  font-family: 'Poppins', sans-serif;
+  @include Global.f_around(Global.$f40, Global.$f40, 700, 20);
+  color: Global.$chead;
+}
+
+// メイン
+/* mv */
+.p-mv_title {
+  @include Global.f_around(Global.$f160, Global.$f160, 300, 0);
+  color: Global.$chead;
+}
+.p-mv_text {
+  @include Global.f_around(Global.$f24, Global.$f40, 300, 20);
+  color: Global.$chead;
+}
+.c-content_title {
+  font-family: 'Poppins', sans-serif;
+  @include Global.f_around(Global.$f62, Global.$f62, 700, 20);
+  color: Global.$ctitle;
+}
+.c-content_text,
+.c-card_text,
+.c-group_text {
+  @include Global.f_around(Global.$f24, 4.2rem, 300, 80);
+  color: Global.$ctext;
+}
+.c-group_title,
+.c-card_title {
+  font-family: 'Poppins', sans-serif;
+  @include Global.f_around(Global.$f46, Global.$f46, 700, 80);
+  color: Global.$ctext;
+}
+.c-group_title {
+
+}

@@ -1,0 +1,23 @@
+@use "../Global";
+.l-wrapper {
+  padding-top: 145px;
+}
+.l-container {
+  width: 92%;
+  margin: 0 auto;
+}
+.l-wrapper_content {
+  padding-bottom: 250px;
+}
+.l-background {
+  background-color: Global.$cbg;
+  width: 100%;
+}
+
+.l-background-pt {
+  padding-top: 28%;
+}
+.l-background-florist {
+  padding-top: 640px;
+  margin-bottom: 2110px;
+}

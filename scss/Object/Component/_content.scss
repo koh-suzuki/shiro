@@ -1,0 +1,16 @@
+@use "../../Global";
+.c-content {
+  text-align: center;
+}
+.c-content_line {
+  width: 53px;
+  margin: 40px auto 0;
+  background-color: Global.$ctext;
+  height: 3px;
+}
+.c-content_text {
+  margin-top: 50px;
+}
+.c-content_img {
+  width: 92%;
+}

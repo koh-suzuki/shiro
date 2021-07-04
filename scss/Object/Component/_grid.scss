@@ -1,0 +1,9 @@
+@use "../../Global";
+
+.c-flex {
+  display: flex;
+}
+.c-flex-spaceBet {
+  justify-content: space-between;
+  align-items: center;
+}

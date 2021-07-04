@@ -1,4 +1,16 @@
 @charset "UTF-8";
+/* ===============================================
+# フォント
+=============================================== */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "ヒラギノ角ゴ Pro", "Poppins", sans-serif;
+}
+
 /*!
  * ress.css • v1.2.2
  * MIT License
@@ -380,8 +392,306 @@ video {
   text-shadow: none;
 }
 
-.header_logo {
-  color: red;
+.c-header_logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: white;
+}
+
+/* mv */
+.p-mv_title {
+  font-size: 16rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.p-mv_text {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: white;
+}
+
+.c-content_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #2b2b2b;
+}
+
+.c-content_text,
+.c-card_text,
+.c-group_text {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0.08em;
+  color: black;
+}
+
+.c-group_title,
+.c-card_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: black;
+}
+
+.l-header {
+  padding: 40px 0 0;
+  width: 100%;
+}
+
+.l-wrapper {
+  padding-top: 145px;
+}
+
+.l-container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.l-wrapper_content {
+  padding-bottom: 250px;
+}
+
+.l-background {
+  background-color: #ededed;
+  width: 100%;
+}
+
+.l-background-pt {
+  padding-top: 28%;
+}
+
+.l-background-florist {
+  padding-top: 640px;
+  margin-bottom: 2110px;
+}
+
+.c-content {
+  text-align: center;
+}
+
+.c-content_line {
+  width: 53px;
+  margin: 40px auto 0;
+  background-color: black;
+  height: 3px;
+}
+
+.c-content_text {
+  margin-top: 50px;
+}
+
+.c-content_img {
+  width: 92%;
+}
+
+.c-card {
+  padding: 70px 0;
+}
+
+.card_item {
+  width: 590px;
+}
+
+.ccard-right {
+  margin-left: auto;
+}
+
+.c-card_title {
+  margin-top: 40px;
+}
+
+.c-card_text {
+  margin-top: 30px;
+}
+
+.c-flex {
+  display: flex;
+}
+
+.c-flex-spaceBet {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.u-visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.c-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.p-hamburger {
+  /* poitionは必要なら使う */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 2rem transparent;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.p-hamburger:hover,
+.p-hamburger:focus {
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+}
+
+.p-hamburger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  /* 親要素に対してど真ん中に配置 */
+  width: 18px;
+  /* お肉の幅 */
+  height: 2px;
+  /* お肉の高さ */
+  background-color: white;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.p-hamburger__line::before,
+.p-hamburger__line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.p-hamburger__line::before {
+  top: -5px;
+}
+
+.p-hamburger__line::after {
+  top: 5px;
+}
+
+.p-drawer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.p-hamburger[aria-expanded=true] .p-hamburger__line {
+  background-color: transparent;
+}
+
+.is-drawerActive .p-drawer {
+  transform: translateX(0);
+}
+
+.p-hamburger[aria-expanded=true] .p-hamburger__line::before,
+.p-hamburger[aria-expanded=true] .p-hamburger__line::after {
+  top: 0;
+  background-color: #f9d8ae;
+}
+
+.p-hamburger[aria-expanded=true] .p-hamburger__line::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.p-hamburger[aria-expanded=true] .p-hamburger__line::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.p-mv {
+  padding-top: 50%;
+  text-align: center;
+}
+
+.p-florist {
+  padding: 80px 0;
+}
+
+.p-mv-bgImg {
+  background: url("../img/mv.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.u-avatar {
+  margin-top: 100px;
+}
+
+.u-group {
+  margin-top: 30px;
+}
+
+.l-header {
+  position: fixed;
+}
+
+/* concept */
+.u-position {
+  position: relative;
+}
+
+.u-position_absolute-topCenter {
+  position: absolute;
+  top: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.u-position-florist {
+  width: 92%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
