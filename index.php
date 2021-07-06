@@ -8,8 +8,8 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="l-header">
-    <section class="c-header c-flex c-flex-spaceBet">
-      <h1 class="c-header_logo">Shiro</h1>
+    <section class="p-header c-flex c-flex_spaceBetween-center">
+      <h1 class="p-header_logo">Shiro</h1>
       <button type="button" id="js-buttonHamburger" class="c-button p-hamburger" aria-controls="global-nav" aria-expanded="false">
         <span class="p-hamburger__line">
           <span class="u-visuallyHidden">
@@ -156,54 +156,66 @@
     </section>
 
     <section class="l-wrapper">
-      <div class="c-content">
-        <h2 class="c-content_title">Shop information</h2>
-        <hr class="c-content_line">
-        <p class="c-content_text">
-          Shiroの店舗情報をご紹介します。
-        </p>
-      </div>
-      <div>
-        <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/access.jpg" alt="">
+        <div class="c-content">
+          <h2 class="c-content_title">Shop information</h2>
+          <hr class="c-content_line">
+          <p class="c-content_text">
+            Shiroの店舗情報をご紹介します。
+          </p>
         </div>
-        <div>
-          <dl>
-            <dt></dt>
-            <dd></dd>
-            <dt></dt>
-            <dd></dd>
-            <dt></dt>
-            <dd></dd>
-            <dt></dt>
-            <dd></dd>
-          </dl>
+        <div class="p-shop l-container">
+          <div class="p-shop_img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/access.jpg" alt="">
+          </div>
+          <div class="p-access">
+            <dl class="p-access_list">
+              <div class="c-list_item c-flex">
+                <dt class="c-item_title">住所</dt>
+                <dd class="c-item_text">〒810-0001</br>
+                  福岡県福岡市中央区天神0-0-0
+                </dd>
+              </div>
+              <div class="c-list_item c-flex">
+                <dt class="c-item_title">電話番号</dt>
+                <dd class="c-item_text">0120-000-000</dd>
+              </div>
+              <div class="c-list_item c-flex">
+                <dt class="c-item_title">営業時間</dt>
+                <dd class="c-item_text">11:00-20:30 （定休日：水曜日）</dd>
+              </div>
+              <div class="c-list_item c-flex">
+                <dt class="c-item_title">アクセス</dt>
+                <dd class="c-item_text">天神駅12a出口から徒歩6分、東京駅8b出口から徒歩12分</dd>
+              </div>
+            </dl>
+          </div>
         </div>
-      </div>
     </section>
     </div>
     <section class="l-wrapper">
-      <div class="c-content">
-        <div class="c-content_title">
-          <h2>Contact us</h2>
-          <hr class="c-content_line">
-          <p>
-            イベントや結婚式でご利用する装花のご相談や、
-            フラワーアレンジメントのご予約などはこちらからお問い合わせください。
+      <div class="c-content p-contact">
+        <div class="l-container">
+          <div class="p-contact_inner">
+            <h2 class="c-content_title">Contact us</h2>
+            <hr class="c-content_line">
+            <p class="c-content_text">
+              イベントや結婚式でご利用する装花のご相談や、
+              フラワーアレンジメントのご予約などはこちらからお問い合わせください。
+            </p>
+          </div>
+          <p class="p-contact_btn">
+            <a class="c-btn c-btn_contact" href="" target="blank">
+              <i class="far fa-envelope"></i>
+              <span>お問い合わせ</span>
+            </a>
           </p>
         </div>
-        <p>
-          <a href="" target="blank">
-            <i class="far fa-envelope"></i>
-            <span>お問い合わせ</span>
-          </a>
-        </p>
       </div>
     </section>
   </main>
   <footer class="l-footer">
-    <div>
-      <small>Copyright © Shiro All Rights Reserved.</small>
+    <div class="l-footer_iner">
+      <small class="p-copyright">Copyright © Shiro All Rights Reserved.</small>
     </div>
   </footer>
 </body>

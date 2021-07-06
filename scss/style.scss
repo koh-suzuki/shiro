@@ -11,8 +11,8 @@
 // Layout
 // ==========================================================================
 
-// @use "Layout/_footer";
-@use "Layout/_header";
+@use "Layout/_l-footer";
+@use "Layout/_l-header";
 @use "Layout/_main";
 // @use "Layout/_sidebar";
 
@@ -25,7 +25,7 @@
 // -----------------------------------------------------------------
 @use 'Object/Component/content';
 @use "Object/Component/_card";
-// @use "Object/Component/_button";
+@use "Object/Component/_button";
 // @use "Object/Component/_dialog";
 @use "Object/Component/_grid";
 // @use "Object/Component/_media";
@@ -37,6 +37,8 @@
 @use "Object/Project/_hamberger";
 @use "Object/Project/_mv";
 @use "Object/Project/_florist";
+@use "Object/Project/_header";
+@use "Object/Project/_access";
 // @use "Object/Project/_articles";
 // @use "Object/Project/_comments";
 @use "Object/Project/_gallery";

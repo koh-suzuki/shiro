@@ -3,7 +3,11 @@
 .c-flex {
   display: flex;
 }
-.c-flex-spaceBet {
+.c-flex_spaceBetween {
+  justify-content: space-between;
+  
+}
+.c-flex_spaceBetween-center {
   justify-content: space-between;
   align-items: center;
 }

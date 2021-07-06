@@ -1,0 +1,9 @@
+@use "../../Global";
+.c-btn {
+  padding: 30px 100px;
+  background: #fff;
+  display: inline-block;
+}
+.c-btn_contact {
+  border: 1px solid Global.$ctitle;
+}

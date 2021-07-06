@@ -1,7 +1,7 @@
 @use "../Global";
 
 // ヘッダー
-.c-header_logo {
+.p-header_logo {
   font-family: 'Poppins', sans-serif;
   @include Global.f_around(Global.$f40, Global.$f40, 700, 20);
   color: Global.$chead;
@@ -24,7 +24,9 @@
 }
 .c-content_text,
 .c-card_text,
-.c-group_text {
+.c-group_text,
+.c-item_title, 
+.c-item_text {
   @include Global.f_around(Global.$f24, 4.2rem, 300, 80);
   color: Global.$ctext;
 }
@@ -34,6 +36,16 @@
   @include Global.f_around(Global.$f46, Global.$f46, 700, 80);
   color: Global.$ctext;
 }
-.c-group_title {
+.c-btn_contact,
+.fa-envelope {
+  @include Global.f_around(Global.$f24, 3.7rem, 300, 100);
+  color: Global.$ctext;
+}
 
+// shop access
+
+// footer
+.p-copyright {
+  @include Global.f_around(Global.$f22, 3.15rem, 300, 80);
+  color: Global.$ctext;
 }

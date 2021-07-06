@@ -392,7 +392,7 @@ video {
   text-shadow: none;
 }
 
-.c-header_logo {
+.p-header_logo {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
   font-weight: 700;
@@ -429,7 +429,9 @@ video {
 
 .c-content_text,
 .c-card_text,
-.c-group_text {
+.c-group_text,
+.c-item_title,
+.c-item_text {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.75;
@@ -445,6 +447,31 @@ video {
   line-height: 1;
   letter-spacing: 0.08em;
   color: black;
+}
+
+.c-btn_contact,
+.fa-envelope {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.5416666667;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.p-copyright {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.4318181818;
+  letter-spacing: 0.08em;
+  color: black;
+}
+
+.l-footer {
+  padding: 50px 0;
+}
+
+.l-footer_iner {
+  text-align: center;
 }
 
 .l-header {
@@ -518,11 +545,25 @@ video {
   margin-top: 30px;
 }
 
+.c-btn {
+  padding: 30px 100px;
+  background: #fff;
+  display: inline-block;
+}
+
+.c-btn_contact {
+  border: 1px solid #2b2b2b;
+}
+
 .c-flex {
   display: flex;
 }
 
-.c-flex-spaceBet {
+.c-flex_spaceBetween {
+  justify-content: space-between;
+}
+
+.c-flex_spaceBetween-center {
   justify-content: space-between;
   align-items: center;
 }
@@ -654,6 +695,20 @@ video {
   padding: 80px 0;
 }
 
+.p-header {
+  padding: 0 4vw;
+}
+
+.c-item_text {
+  width: 80%;
+  padding-left: 40px;
+  border-left: solid 2px #5e5e5e;
+}
+
+.c-item_title {
+  width: 20%;
+}
+
 .p-mv-bgImg {
   background: url("../img/mv.jpg") no-repeat;
   background-size: cover;
@@ -662,12 +717,30 @@ video {
   height: 90vh;
 }
 
+.p-contact {
+  background: url("../img/contact.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 741px;
+  padding-top: 140px;
+}
+
 .u-avatar {
   margin-top: 100px;
 }
 
 .u-group {
   margin-top: 30px;
+}
+
+.p-shop,
+.c-list_item {
+  margin-top: 40px;
+}
+
+.p-contact_btn {
+  margin-top: 70px;
 }
 
 .l-header {
