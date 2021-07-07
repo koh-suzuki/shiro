@@ -1,17 +1,24 @@
 .u-avatar {
   margin-top: 100px;
 }
-.u-group {
+.u-group,
+.c-card_text {
   margin-top: 30px;
 }
-
-// shop access
+.c-card_title,
 .p-shop,
 .c-list_item {
   margin-top: 40px;
 }
 
-// contact
-.p-contact_btn {
+.p-contact_btn,
+.c-card_item+.c-card_item {
   margin-top: 70px;
+}
+.c-card-right {
+  margin-left: auto;
+}
+
+.fa-envelope::before {
+  margin-right: 15px;
 }

@@ -41,6 +41,11 @@
   @include Global.f_around(Global.$f24, 3.7rem, 300, 100);
   color: Global.$ctext;
 }
+.fa-envelope::before {
+  font-size: 35px;
+  font-weight: 400;
+  vertical-align: -0.1em;
+}
 
 // shop access
 

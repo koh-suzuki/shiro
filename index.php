@@ -109,8 +109,7 @@
             <h2 class="c-content_title">Florist</h2>
             <hr class="c-content_line">
             <p class="c-content_text">
-              Shiro専属のフローリストたちをご紹介。
-              得意の分野であなたのオーダーを最大限に叶えます。
+              <span class="c-contact_text-span"></span>Shiro専属のフローリストたちをご紹介。<span class="c-contact_text-span">得意の分野であなたのオーダーを最大限に叶えます。</span>
             </p>
           </div>
         </div>
@@ -199,14 +198,14 @@
             <h2 class="c-content_title">Contact us</h2>
             <hr class="c-content_line">
             <p class="c-content_text">
-              イベントや結婚式でご利用する装花のご相談や、
-              フラワーアレンジメントのご予約などはこちらからお問い合わせください。
+              <span class="c-contact_text-span"></span>イベントや結婚式でご利用する装花のご相談や、<span class="c-contact_text-span">フラワーアレンジメントのご予約などはこちらからお問い合わせください。</span>
             </p>
           </div>
           <p class="p-contact_btn">
             <a class="c-btn c-btn_contact" href="" target="blank">
-              <i class="far fa-envelope"></i>
-              <span>お問い合わせ</span>
+              <i class="far fa-envelope">お問い合わせ</i>
+
+              <!-- <span></span> -->
             </a>
           </p>
         </div>

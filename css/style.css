@@ -458,6 +458,12 @@ video {
   color: black;
 }
 
+.fa-envelope::before {
+  font-size: 35px;
+  font-weight: 400;
+  vertical-align: -0.1em;
+}
+
 .p-copyright {
   font-size: 2.2rem;
   font-weight: 300;
@@ -525,24 +531,16 @@ video {
   width: 92%;
 }
 
+.c-contact_text-span {
+  display: inline-block;
+}
+
 .c-card {
-  padding: 70px 0;
+  padding: 70px 0 120px;
 }
 
-.card_item {
+.c-card_item {
   width: 590px;
-}
-
-.ccard-right {
-  margin-left: auto;
-}
-
-.c-card_title {
-  margin-top: 40px;
-}
-
-.c-card_text {
-  margin-top: 30px;
 }
 
 .c-btn {
@@ -730,17 +728,28 @@ video {
   margin-top: 100px;
 }
 
-.u-group {
+.u-group,
+.c-card_text {
   margin-top: 30px;
 }
 
+.c-card_title,
 .p-shop,
 .c-list_item {
   margin-top: 40px;
 }
 
-.p-contact_btn {
+.p-contact_btn,
+.c-card_item + .c-card_item {
   margin-top: 70px;
+}
+
+.c-card-right {
+  margin-left: auto;
+}
+
+.fa-envelope::before {
+  margin-right: 15px;
 }
 
 .l-header {
